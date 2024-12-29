@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1200px;
+  margin-inline: auto;
+}
+
+.section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-image: url(../assets/start-screen-gradient-background.jpg);
+  background-size: cover;
+  height: 100vh;
+}
