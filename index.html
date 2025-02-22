@@ -16,12 +16,20 @@
         <p class="logo_subtitle">Shelter for pets in Boston</p>
       </div>
 
-      <ul class="nav">
-        <li class="nav-menu_1">About the shelter</li>
-        <a href="ourPets.html"><li class="nav-menu">Our pets</li></a>
-        <li class="nav-menu">Help the shelter</li>
-        <li class="nav-menu">Contacts</li>
-      </ul>
+      <nav>
+        <ul class="nav">
+          <li class="nav-menu_1">About the shelter</li>
+          <a href="ourPets.html"><li class="nav-menu">Our pets</li></a>
+          <li class="nav-menu">Help the shelter</li>
+          <li class="nav-menu">Contacts</li>
+        </ul>
+
+        <div class="burger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
     </header>
 
     <div class="section-wrapper">
@@ -91,6 +99,11 @@
             </div>
 
             <button class="right-arrow">&rarr;</button>
+
+            <div class="buttons_320px">
+              <button class="left-arrow_320px">&larr;</button>
+              <button class="right-arrow_320px">&rarr;</button>
+            </div>
           </div>
           <button class="gettoknow">Get to know the rest</button>
         </div>
@@ -145,7 +158,7 @@
       </section>
 
       <section class="donation">
-        <div class="donation-container">
+        <div class="donation-container container">
           <img
             class="donation-dog"
             src="assets/donation-dog.png"
@@ -171,42 +184,46 @@
 
     <footer>
       <section class="footer container">
-        <section class="contacts">
-          <h3>
-            For questions <br />
-            and suggestions
-          </h3>
-          <div class="email">
-            <img src="assets/icons/mail.svg" alt="" />
-            <p>email@shelter.com</p>
-          </div>
+        <div class="footer-info">
+          <section class="contacts">
+            <h3>
+              For questions <br />
+              and suggestions
+            </h3>
+            <div class="email">
+              <img src="assets/icons/mail.svg" alt="" />
+              <p>email@shelter.com</p>
+            </div>
 
-          <div class="phone">
-            <img src="assets/icons/icon-phone.svg" alt="" />
-            <p>+13 674 567 75 54</p>
-          </div>
-        </section>
+            <div class="phone">
+              <img src="assets/icons/icon-phone.svg" alt="" />
+              <p>+13 674 567 75 54</p>
+            </div>
+          </section>
 
-        <section class="adress">
-          <h3>
-            We are waiting <br />
-            for your visit
-          </h3>
-          <div class="street_1">
-            <img src="assets/icons/pin.svg" alt="" />
-            <p>
-              1 Central Street, Boston <br />
-              (entrance from the store)
-            </p>
-          </div>
+          <section class="address">
+            <h3>
+              We are waiting <br />
+              for your visit
+            </h3>
+            <div class="street_1">
+              <img class="pin" src="assets/icons/pin.svg" alt="" />
+              <p>
+                1 Central Street, Boston <br />
+                (entrance from the store)
+              </p>
+            </div>
 
-          <div class="street_2">
-            <img src="assets/icons/pin.svg" alt="" />
-            <p>18 South Park, London</p>
-          </div>
-        </section>
+            <div class="street_2">
+              <img class="pin" src="assets/icons/pin.svg" alt="" />
+              <p>18 South Park, London</p>
+            </div>
+          </section>
+        </div>
 
-        <img src="assets/footer-puppy.png" alt="puppy.png" />
+        <div class="footer-puppy">
+          <img src="assets/footer-puppy.png" alt="puppy.png" />
+        </div>
       </section>
     </footer>
   </body>

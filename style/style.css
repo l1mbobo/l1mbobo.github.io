@@ -4,8 +4,10 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   margin-inline: auto;
+  overflow: hidden;
 }
 
 .section-wrapper {
@@ -15,4 +17,23 @@ body {
   background-image: url(../assets/start-screen-gradient-background.jpg);
   background-size: cover;
   height: 100vh;
+
+  @media (max-width: 768px) {
+    max-height: 1165px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: calc(100% - 60px);
+    padding-inline: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: calc(100% - 40px);
+    padding-inline: 20px;
+  }
 }

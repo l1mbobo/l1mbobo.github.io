@@ -10,6 +10,13 @@ main {
   justify-content: space-between;
 }
 
+@media (max-width: 320px) {
+  .pets-content.container {
+    width: calc(100% - 20px);
+    padding-inline: 10px;
+  }
+}
+
 .pets-content h3 {
   margin: 0;
   padding-bottom: 45px;
@@ -17,14 +24,23 @@ main {
   letter-spacing: 0.06em;
   text-align: center;
   color: rgba(84, 84, 84, 1);
-  width: 400px;
+  width: 100%;
   margin-inline: auto;
+
+  @media (max-width: 320px) {
+    font: 25px/32.5px Georgia;
+    padding-bottom: 42px;
+  }
 }
 
 .cards-container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px 40px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .card_1,
@@ -83,6 +99,10 @@ main {
   gap: 20px;
   padding-bottom: 100px;
   padding-top: 45px;
+
+  @media (max-width: 320px) {
+    gap: 10px;
+  }
 }
 
 .navigation button {

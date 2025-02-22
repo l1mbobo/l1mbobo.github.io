@@ -14,6 +14,7 @@ header {
 .logo {
   display: flex;
   flex-direction: column;
+  text-wrap: nowrap;
 }
 
 h1 {
@@ -33,9 +34,23 @@ h1 {
   color: rgba(84, 84, 84, 1);
 }
 
+.burger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 10px;
+}
+
+.burger-menu .bar {
+  width: 30px;
+  height: 2px;
+  background: rgba(0, 0, 0, 1);
+}
+
 .nav {
   display: flex;
   margin: 0;
+  text-wrap: nowrap;
 }
 
 .nav-menu_2 {
@@ -64,4 +79,14 @@ h1 {
 .nav-menu:hover {
   border-bottom: 3px solid rgba(241, 205, 179, 1);
   color: rgba(41, 41, 41, 1);
+}
+
+@media (max-width: 320px) {
+  .burger-menu {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+  }
 }

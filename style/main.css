@@ -6,18 +6,23 @@ main {
 .start-screen {
   display: flex;
   justify-content: space-between;
+  margin-top: 180px;
 }
 
 .start-screen img {
   width: 698px;
   height: 728px;
+
+  @media (max-width: 768px) {
+    margin-top: 100px;
+    margin-left: auto;
+  }
 }
 
 .start-screen-content {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 322px;
+  gap: 42px 0;
   margin-top: 163px;
 }
 
@@ -49,6 +54,10 @@ main {
   font: 17px/22.1px Georgia;
   letter-spacing: 0.06em;
   transition: all 0.3s;
+
+  @media (max-width: 768px) {
+    margin-inline: auto;
+  }
 }
 
 .start-screen-content button:hover {
@@ -56,17 +65,27 @@ main {
 }
 
 .about {
-  height: 588px;
+  padding-block: 80px 100px; /* Убрать фиксированную высоту, поменять на паддинги */
   background: rgba(255, 255, 255, 1);
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 120px;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    gap: 80px;
+  }
 }
 
 .about img {
   width: 300px;
   height: 408px;
-  margin-right: 120px;
+
+  @media (max-width: 320px) {
+    width: 260px;
+    height: auto;
+  }
 }
 
 .about-content {
@@ -74,6 +93,11 @@ main {
   flex-direction: column;
   justify-content: space-between;
   height: 380px;
+
+  @media (max-width: 320px) {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .about-content h3 {
@@ -83,6 +107,14 @@ main {
   font: 35px/45.5px Georgia;
   letter-spacing: 0.06em;
   color: rgba(84, 84, 84, 1);
+
+  @media (max-width: 320px) {
+    width: 100%;
+    height: 100%;
+    font: 25px/32.5px Georgia;
+    text-align: center;
+    padding-bottom: 25px;
+  }
 }
 
 .about-content p {
@@ -90,12 +122,22 @@ main {
   width: 430px;
   color: rgba(76, 76, 76, 1);
   font: 15px/24px Arial;
+
+  @media (max-width: 320px) {
+    width: calc(100% - 30px);
+    height: 100%;
+    padding-inline: 15px;
+    text-align: justify;
+  }
 }
 
 .about-content_p1 {
   height: 96px;
-}
 
+  @media (max-width: 320px) {
+    padding-bottom: 22px;
+  }
+}
 .about-content_p2 {
   height: 144px;
 }
@@ -103,6 +145,10 @@ main {
 .pets {
   height: 877px;
   background: rgba(246, 246, 246, 1);
+
+  @media (max-width: 320px) {
+    height: 100%;
+  }
 }
 
 .pets-content {
@@ -124,6 +170,13 @@ main {
   color: rgba(84, 84, 84, 1);
   margin-inline: auto;
   margin-block: 0;
+
+  @media (max-width: 320px) {
+    width: 100%;
+    height: 100%;
+    font: 25px/32.5px Georgia;
+    text-align: center;
+  }
 }
 
 .slider {
@@ -132,11 +185,20 @@ main {
   align-items: center;
   height: 435px;
   width: 100%;
+  gap: 5px;
+
+  @media (max-width: 320px) {
+    height: 100%;
+    width: calc(100% - 30px);
+    padding-inline: 15px;
+  }
 }
 
 .slider-track {
   display: flex;
-  gap: 90px;
+  gap: 30px;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .card_1,
@@ -150,6 +212,18 @@ main {
   background: rgba(250, 250, 250, 1);
   padding-bottom: 35px;
   gap: 30px 0;
+}
+
+@media (max-width: 768px) {
+  .card_3 {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  .card_2 {
+    display: none;
+  }
 }
 
 .card-text {
@@ -172,17 +246,27 @@ main {
   transition: 0.3s all;
 }
 
+.buttons_320px {
+  display: none;
+}
+
 .left-arrow,
-.right-arrow {
+.right-arrow,
+.left-arrow_320px,
+.right-arrow_320px {
   font-weight: 700;
   font-size: large;
   width: 52px;
   height: 52px;
   color: rgba(41, 41, 41, 1);
   background: none;
-  border-radius: 100px;
+  border-radius: 50%;
   border: 2px solid rgba(241, 205, 179, 1);
   text-align: center;
+
+  @media (max-width: 768px) {
+    flex-shrink: 0;
+  }
 }
 
 .slider button:hover {
@@ -205,8 +289,7 @@ main {
 }
 
 .help-content {
-  padding-top: 80px;
-  padding-bottom: 100px;
+  padding-block: 42px;
 }
 
 .help-content h3 {
@@ -216,6 +299,11 @@ main {
   letter-spacing: 0.06em;
   text-align: center;
   margin-bottom: 60px;
+
+  @media (max-width: 320px) {
+    font: 25px/32.5px Georgia;
+    text-align: center;
+  }
 }
 
 .help-list {
@@ -226,12 +314,34 @@ main {
   padding: 0;
   list-style-type: none;
   gap: 55px 120px;
+
+  @media (max-width: 768px) {
+    gap: 55px 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .help-list {
+    gap: 30px 0;
+    justify-content: space-between;
+  }
 }
 
 .help-item {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 768px) {
+    width: 170px;
+  }
+}
+
+@media (max-width: 320px) {
+  .help-item {
+    width: 130px;
+    gap: 20px 0;
+  }
 }
 
 .help-item img {
@@ -244,6 +354,11 @@ main {
   font: 20px/23px Georgia;
   letter-spacing: 0.06em;
   color: rgba(84, 84, 84, 1);
+
+  @media (max-width: 320px) {
+    margin: 0;
+    font: 15px/16.5px Georgia;
+  }
 }
 
 .donation {
@@ -252,23 +367,49 @@ main {
 
 .donation-container {
   display: flex;
-  justify-content: space-between;
-  padding-top: 80px;
-  padding-bottom: 100px;
-  width: 915px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-block: 80px 100px;
   margin-inline: auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    padding-inline: 132px;
+  }
+
+  @media (max-width: 320px) {
+    padding-block: 42px;
+    gap: 42px;
+  }
 }
 
 .donation-dog {
   width: 505px;
   height: 261px;
+
+  @media (max-width: 320px) {
+    width: 260px;
+    height: auto;
+  }
 }
 
 .donation-content {
   width: 380px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+    gap: 20px 0;
+    margin-inline: auto;
+  }
+
+  @media (max-width: 320px) {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .donation-content h3 {
@@ -276,6 +417,11 @@ main {
   font: 35px/45.5px Georgia;
   letter-spacing: 0.06em;
   margin: 0;
+
+  @media (max-width: 320px) {
+    font: 25px/32.5px Georgia;
+    text-align: center;
+  }
 }
 
 .donation-content h5 {
@@ -283,15 +429,26 @@ main {
   color: rgba(84, 84, 84, 1);
   font: 15px/16.5px Georgia;
   letter-spacing: 0.06em;
+
+  @media (max-width: 320px) {
+    font: 15px/24px Georgia;
+    letter-spacing: 0;
+  }
 }
 
 .credit-card {
   background: rgba(241, 205, 179, 1);
   border-radius: 9px;
-  width: 349px;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 10px 15px;
+
+  @media (max-width: 320px) {
+    padding-block: 10px;
+    padding-inline: 0;
+  }
 }
 
 .credit-card-number {
@@ -299,10 +456,104 @@ main {
   margin-left: 15px;
   font: 20px/23px Georgia;
   letter-spacing: 0.06em;
+
+  @media (max-width: 320px) {
+    font: 15px/16.5px Georgia;
+  }
 }
 
 .legal-information {
   color: rgba(178, 178, 178, 1);
   font: italic 12px/18px Arial;
   margin: 0;
+
+  @media (max-width: 320px) {
+    font: italic 12px/18px Arial;
+    letter-spacing: 0;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 768px) {
+  .start-screen {
+    flex-direction: column;
+    margin-top: 150px;
+  }
+
+  .start-screen-content {
+    margin-inline: auto;
+  }
+
+  .start-screen img {
+    width: 569px;
+    height: 593px;
+  }
+}
+
+@media (max-width: 320px) {
+  .start-screen img {
+    width: 260px;
+    height: auto;
+  }
+
+  .start-screen-content {
+    margin-top: 0;
+  }
+
+  .start-screen-content h2 {
+    font: 25px/32.5px Georgia;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    text-wrap: balance;
+  }
+
+  .start-screen-content p {
+    text-align: center;
+    text-wrap: balance;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about {
+    padding-block: 42px 42.4px;
+    width: calc(100% - 20px);
+    padding-inline: 10px;
+    gap: 42px;
+  }
+
+  .pets-content {
+    padding-block: 42px;
+    gap: 42px;
+  }
+
+  .pets-content.container {
+    width: calc(100% - 20px) !important;
+    padding-inline: 10px !important;
+  }
+
+  .slider {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-arrow,
+  .right-arrow {
+    display: none;
+  }
+
+  .buttons_320px {
+    display: flex;
+    gap: 0 80px;
+  }
+
+  .help-content.container {
+    width: calc(100% - 30px) !important;
+    padding-inline: 15px !important;
+  }
+
+  .donation-container.container {
+    width: calc(100% - 20px) !important;
+    padding-inline: 10px !important;
+  }
 }
