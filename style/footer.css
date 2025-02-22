@@ -1,0 +1,100 @@
+footer {
+  background-image: url(../assets/start-screen-gradient-background.jpg);
+  background-size: cover;
+}
+
+.footer {
+  display: flex;
+  gap: 0 160px;
+  padding-top: 40px;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 0 160px;
+
+  @media (max-width: 768px) {
+    gap: 0 60px;
+  }
+
+  @media (max-width: 320px) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-puppy {
+    display: flex;
+    justify-content: center;
+    padding-top: 65px;
+  }
+}
+
+footer h3 {
+  margin: 0;
+  color: rgba(255, 255, 255, 1);
+  font: 35px/45.5px Georgia;
+  letter-spacing: 0.06em;
+
+  @media (max-width: 320px) {
+    font: 25px/32.5px Georgia;
+    text-align: center;
+  }
+}
+
+.contacts,
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts {
+  gap: 40px 0;
+}
+
+.address {
+  gap: 33px 0;
+}
+
+.email,
+.phone,
+.street_1,
+.street_2 {
+  font: 20px/23px Georgia;
+  letter-spacing: 0.06em;
+  color: rgba(241, 205, 179, 1);
+  display: flex;
+}
+
+.email p,
+.phone p,
+.street_1 p,
+.street_2 p {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.pin {
+  width: 22px;
+  height: 32px;
+}
+
+@media (max-width: 320px) {
+  .footer-puppy img {
+    width: 260px;
+    height: auto;
+  }
+}
