@@ -456,6 +456,7 @@ main {
   margin-left: 15px;
   font: 20px/23px Georgia;
   letter-spacing: 0.06em;
+  text-decoration: none;
 
   @media (max-width: 390px) {
     font: 15px/16.5px Georgia;

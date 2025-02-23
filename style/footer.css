@@ -87,6 +87,10 @@ footer h3 {
   margin-left: 20px;
 }
 
+.phone p {
+  text-decoration: none;
+}
+
 .pin {
   width: 22px;
   height: 32px;
