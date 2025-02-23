@@ -31,7 +31,7 @@ body {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .container {
     width: calc(100% - 40px);
     padding-inline: 20px;

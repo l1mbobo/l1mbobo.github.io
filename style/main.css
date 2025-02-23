@@ -82,7 +82,7 @@ main {
   width: 300px;
   height: 408px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: 260px;
     height: auto;
   }
@@ -94,7 +94,7 @@ main {
   justify-content: space-between;
   height: 380px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: 100%;
     height: 100%;
   }
@@ -108,7 +108,7 @@ main {
   letter-spacing: 0.06em;
   color: rgba(84, 84, 84, 1);
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: 100%;
     height: 100%;
     font: 25px/32.5px Georgia;
@@ -123,7 +123,7 @@ main {
   color: rgba(76, 76, 76, 1);
   font: 15px/24px Arial;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: calc(100% - 30px);
     height: 100%;
     padding-inline: 15px;
@@ -134,7 +134,7 @@ main {
 .about-content_p1 {
   height: 96px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     padding-bottom: 22px;
   }
 }
@@ -146,7 +146,7 @@ main {
   height: 877px;
   background: rgba(246, 246, 246, 1);
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     height: 100%;
   }
 }
@@ -171,7 +171,7 @@ main {
   margin-inline: auto;
   margin-block: 0;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: 100%;
     height: 100%;
     font: 25px/32.5px Georgia;
@@ -187,7 +187,7 @@ main {
   width: 100%;
   gap: 5px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     height: 100%;
     width: calc(100% - 30px);
     padding-inline: 15px;
@@ -220,7 +220,7 @@ main {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .card_2 {
     display: none;
   }
@@ -246,14 +246,14 @@ main {
   transition: 0.3s all;
 }
 
-.buttons_320px {
+.buttons_390px {
   display: none;
 }
 
 .left-arrow,
 .right-arrow,
-.left-arrow_320px,
-.right-arrow_320px {
+.left-arrow_390px,
+.right-arrow_390px {
   font-weight: 700;
   font-size: large;
   width: 52px;
@@ -300,7 +300,7 @@ main {
   text-align: center;
   margin-bottom: 60px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     font: 25px/32.5px Georgia;
     text-align: center;
   }
@@ -320,7 +320,7 @@ main {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .help-list {
     gap: 30px 0;
     justify-content: space-between;
@@ -337,7 +337,7 @@ main {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .help-item {
     width: 130px;
     gap: 20px 0;
@@ -355,7 +355,7 @@ main {
   letter-spacing: 0.06em;
   color: rgba(84, 84, 84, 1);
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     margin: 0;
     font: 15px/16.5px Georgia;
   }
@@ -378,7 +378,7 @@ main {
     padding-inline: 132px;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     padding-block: 42px;
     gap: 42px;
   }
@@ -388,7 +388,7 @@ main {
   width: 505px;
   height: 261px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: 260px;
     height: auto;
   }
@@ -406,7 +406,7 @@ main {
     margin-inline: auto;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     width: 100%;
     margin-bottom: 0;
   }
@@ -418,7 +418,7 @@ main {
   letter-spacing: 0.06em;
   margin: 0;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     font: 25px/32.5px Georgia;
     text-align: center;
   }
@@ -430,7 +430,7 @@ main {
   font: 15px/16.5px Georgia;
   letter-spacing: 0.06em;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     font: 15px/24px Georgia;
     letter-spacing: 0;
   }
@@ -445,7 +445,7 @@ main {
   align-items: center;
   padding: 10px 15px;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     padding-block: 10px;
     padding-inline: 0;
   }
@@ -457,7 +457,7 @@ main {
   font: 20px/23px Georgia;
   letter-spacing: 0.06em;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     font: 15px/16.5px Georgia;
   }
 }
@@ -467,7 +467,7 @@ main {
   font: italic 12px/18px Arial;
   margin: 0;
 
-  @media (max-width: 320px) {
+  @media (max-width: 390px) {
     font: italic 12px/18px Arial;
     letter-spacing: 0;
     text-align: justify;
@@ -490,7 +490,7 @@ main {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .start-screen img {
     width: 260px;
     height: auto;
@@ -542,7 +542,7 @@ main {
     display: none;
   }
 
-  .buttons_320px {
+  .buttons_390px {
     display: flex;
     gap: 0 80px;
   }

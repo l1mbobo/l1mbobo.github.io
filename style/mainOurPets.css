@@ -10,7 +10,7 @@ main {
   justify-content: space-between;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .pets-content.container {
     width: calc(100% - 20px);
     padding-inline: 10px;

@@ -81,7 +81,7 @@ h1 {
   color: rgba(41, 41, 41, 1);
 }
 
-@media (max-width: 320px) {
+@media (max-width: 390px) {
   .burger-menu {
     display: flex;
   }
